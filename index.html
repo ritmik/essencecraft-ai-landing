@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EssenceCraft AI | Превращаем интуицию в ИИ-результаты</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        :root {
+            --primary: #6366f1;
+            --primary-dark: #4f46e5;
+            --accent: #10b981;
+            --dark: #1e293b;
+            --light: #f8fafc;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #0f172a;
+            color: #e2e8f0;
+            line-height: 1.6;
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Остальные стили */
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <div class="logo-icon">EC</div>
+                <h1>EssenceCraft AI</h1>
+            </div>
+            <nav>
+                <a href="#how">Как это работает</a>
+                <a href="#cases">Примеры</a>
+                <a href="#contact">Контакты</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Ваше смутное желание → Идеальный запрос для ИИ</h2>
+                <p>Превращаем интуицию в результат с помощью 50+ ИИ-агентов</p>
+                <button class="cta-button">Попробовать бесплатно</button>
+            </div>
+            <div class="hero-visual">
+                <div class="process-flow">
+                    <div class="process-step">Желание</div>
+                    <div class="arrow">→</div>
+                    <div class="process-step">Идея</div>
+                    <div class="arrow">→</div>
+                    <div class="process-step">Мысль</div>
+                    <div class="arrow">→</div>
+                    <div class="process-step">Запрос</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="how" class="how-it-works">
+        <div class="container">
+            <h3>Как мы "сгущаем" ваш смысл</h3>
+            <div class="process">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h4>Ваша интуиция</h4>
+                    <p>Вы формулируете смутное желание или проблему</p>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h4>50+ ИИ-агентов</h4>
+                    <p>Наши специализированные ИИ углубляются в тему</p>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h4>Синтез</h4>
+                    <p>Агенты спорят, сравнивают и сгущают смысл</p>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h4>Результат</h4>
+                    <p>Вы получаете готовый промпт для ChatGPT/Claude</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="cases" class="use-cases">
+        <div class="container">
+            <h3>Примеры работы</h3>
+            <div class="case">
+                <h4>Для маркетолога:</h4>
+                <div class="before-after">
+                    <div>
+                        <h5>Было:</h5>
+                        <p>"Хочу что-то вирусное про ИИ"</p>
+                    </div>
+                    <div>
+                        <h5>Стало:</h5>
+                        <p class="prompt">"Создай 5 идей для viral-контента о ChatGPT-5, используя: 
+                        контраст '2020 vs 2025', формат 'секреты, о которых молчат', и драматизацию ошибок ИИ с юмором"</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h3>Начните сейчас</h3>
+            <form>
+                <input type="email" placeholder="Ваш email" required>
+                <textarea placeholder="Опишите вашу самую 'неуловимую' задачу"></textarea>
+                <button type="submit">Получить демо-доступ</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>© 2025 EssenceCraft AI. Превращаем интуицию в результат</p>
+        </div>
+    </footer>
+
+    <script>
+        // Простая валидация формы
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const email = this.querySelector('input[type="email"]').value;
+            if (email.includes('@')) {
+                alert('Доступ отправлен! Проверьте ваш email.');
+                this.reset();
+            } else {
+                alert('Пожалуйста, введите корректный email');
+            }
+        });
+    </script>
+</body>
+</html>
